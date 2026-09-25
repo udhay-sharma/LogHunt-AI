@@ -118,7 +118,7 @@ log_analyzer/
 - Docker Desktop
 - A Google Gemini API Key
 
-###1. Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/udhay-sharma/loghunt-ai.git
 cd loghunt-ai
