@@ -118,7 +118,15 @@ log_analyzer/
 - Docker Desktop
 - A Google Gemini API Key
 
-### 1. PostgreSQL Database Setup
+###1. Clone the Repository
+```bash
+git clone https://github.com/udhay-sharma/loghunt-ai.git
+cd loghunt-ai
+```
+
+> If you've downloaded this as a ZIP instead of cloning, make sure to preserve the folder structure below before proceeding.
+
+### 2. PostgreSQL Database Setup
 LogHunt AI provides a reproducible PostgreSQL 16 database environment via Docker Compose.
 1. Ensure **Docker Desktop** is installed and running.
 2. From the project root directory, start the database:
@@ -127,7 +135,7 @@ docker compose up -d
 ```
 The PostgreSQL container will start and expose itself on `localhost:5432`. It automatically initializes the configured development database (`loghunt_db`) and user (`loghunt`).
 
-### 2. Backend Setup
+### 3. Backend Setup
 Navigate to the `backend` directory, create a virtual environment, and install dependencies.
 ```cmd
 cd backend
@@ -148,7 +156,7 @@ The example file already contains the correct default `DATABASE_URL` for the Doc
 python db_init.py
 ```
 
-### 3. Frontend Setup
+### 4. Frontend Setup
 Navigate to the `frontend` directory and install NPM packages.
 ```cmd
 cd frontend
